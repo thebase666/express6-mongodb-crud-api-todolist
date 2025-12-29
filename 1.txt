@@ -1,0 +1,32 @@
+ npm init -y   all default answers
+ npm i express dotenv        
+
+ add gitignore file
+node_modules
+.env.*
+
+ package.json中加 
+  "type": "module",
+  scripts中加
+ "dev": "node --watch src/index.js",
+ start": "node src/server.js", // for production
+ src/index.js 创建一个简单的express服务器
+ npm run dev 启动服务器
+ npm install eslint @eslint/js prettier eslint-config-prettier eslint-plugin-prettier -D
+ 复制文件 eslintrc.json 配置eslint   
+ 复制.prettierrc 配置prettier
+ 复制 .prettierignore 配置prettier忽略的文件
+
+package.json中script中加代码
+"lint": "eslint .",
+"lint:fix": "eslint . --fix",
+"format": "prettier --write .",
+"format:check": "prettier --check .",
+npm run lint检查  
+npm run lint:fix 修复
+npm run format：check 检查
+npm run format 整理
+
+上面是模版 
+
+ 后续 npm i mongoose cors @clerk/express @arcjet/node @arcjet/inspect 
